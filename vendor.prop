@@ -105,6 +105,7 @@ vendor.display.enable_async_powermode=1
 vendor.display.enable_optimize_refresh=1
 debug.sdm.support_writeback=0
 debug.sf.enable_egl_image_tracker=1
+vendor.display.disable_rotator_downscale=1
 
 # DRM
 drm.service.enabled=true

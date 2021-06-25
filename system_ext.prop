@@ -6,6 +6,9 @@ ro.vendor.dirac.poolsize=3
 ro.vendor.dirac.acs.storeSettings=1
 ro.vendor.dirac.acs.ignore_error=1
 
+# Bluetooth
+persist.vendor.bt.a2dp.hal.implementation=true
+
 # Camera
 camera.disable_zsl_mode=true
 

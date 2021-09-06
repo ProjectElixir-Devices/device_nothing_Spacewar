@@ -219,3 +219,9 @@ service fan_control_turn_off /vendor/bin/fan_control 0
     user root
     disabled
     oneshot
+
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled

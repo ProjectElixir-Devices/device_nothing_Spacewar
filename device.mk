@@ -376,6 +376,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.nothing
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \

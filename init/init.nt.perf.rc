@@ -50,3 +50,14 @@ write /dev/cpuctl/foreground/cpu.shares 20480
 write /dev/cpuctl/nnapi-hal/cpu.shares 20480
 write /dev/cpuctl/rt/cpu.shares 20480
 write /dev/cpuctl/top-app/cpu.shares 20480
+
+service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    socket pps stream 0660 system system
+    writepid /dev/cpuset/foreground/tasks
+    

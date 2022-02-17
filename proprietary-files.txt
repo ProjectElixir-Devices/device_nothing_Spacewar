@@ -1699,11 +1699,9 @@ system_ext/bin/wfdservice|cd0638589d1f652d5d40673105dd3ee63856cb88
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
 system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
-system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|146073f7288ee95dc5297d397e5199e5bc24e67d
 system_ext/lib/libmmrtpdecoder.so|e15387b44fd9b3661d763d934663551ca30743d7
 system_ext/lib/libmmrtpencoder.so|dbf276471b60a706d76e12edde388ef887b27396
 system_ext/lib/libwfdavenhancements.so|8a2eeeb2185b8b06aadeb11ec32141cea37cac9c
-system_ext/lib/libwfdclient.so|bfc8de259536a1455733d949ef449845ba766bd6
 system_ext/lib/libwfdcommonutils.so|4b48d7941df68f7316c464d94d2f31d4e8f026e5
 system_ext/lib/libwfdconfigutils.so|9fe88e384dc6407fe32c90ced25328ef3d3d67d0
 system_ext/lib/libwfddisplayconfig.so|ec3383d6c03a21985f4442eae6c7e935867d10c8
@@ -1739,10 +1737,8 @@ system_ext/lib64/libwfduibcsrcinterface.so|b4925a4e75f522ff6d70534e075f2fea24c5c
 system_ext/priv-app/WfdService/WfdService.apk|556c225c72b346319b0c0615e3ed43e1fcf1384d
 
 # WiFi Display (vendor)
-vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/wfdvndservice.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
@@ -1750,7 +1746,6 @@ vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so
-vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so

@@ -20,6 +20,7 @@ ro.launcher.blur.appLaunch=0
 
 # Display
 debug.sf.enable_hwc_vds=1
+debug.force_no_blanking=true
 
 # Dirac
 ro.vendor.dirac.acs.controller=gef

@@ -23,3 +23,7 @@ write /proc/irq/240/smp_affinity_list 1
 
 # Enable suspend to RAM
 write /sys/power/mem_sleep "deep"
+
+on property:ro.board.platform=lahaina
+# Setup foreground cpuset for display composer.
+write /dev/cpuset/foreground/cpus 0-6

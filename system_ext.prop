@@ -40,6 +40,9 @@ ro.vendor.dirac.poolsize=3
 # DPM
 persist.vendor.dpm.feature=11
 
+# Dex2oat
+dalvik.vm.systemuicompilerfilter=speed
+
 # Fingerprint
 ro.bootloader.locked=0
 

@@ -1599,7 +1599,6 @@ vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/qconfig.rc
 vendor/etc/init/vppservice.rc
-vendor/lib/libqconfigclient.so
 vendor/lib/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@2.0.so
 vendor/lib64/libqconfigclient.so

@@ -35,6 +35,10 @@ ro.bootloader.locked=0
 # HWUI
 debug.hwui.skia_atrace_enabled=false
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml

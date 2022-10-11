@@ -93,6 +93,9 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \

@@ -45,3 +45,6 @@ setprop dalvik.vm.dex2oat-threads 6
     write /dev/cpuctl/nnapi-hal/cpu.shares 20480
     write /dev/cpuctl/rt/cpu.shares 20480
     write /dev/cpuctl/top-app/cpu.shares 20480
+
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"

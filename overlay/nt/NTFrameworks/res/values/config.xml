@@ -933,4 +933,6 @@
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+    <!-- Default refresh rate while the device has high brightness mode enabled for HDR. -->
+    <integer name="config_defaultRefreshRateInHbmHdr">60</integer>
 </resources>

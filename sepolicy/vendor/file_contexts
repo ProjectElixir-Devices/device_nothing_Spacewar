@@ -15,5 +15,8 @@
 /vendor/bin/hw/android\.hardware\.nfc@1\.2-service\.pn8x                            u:object_r:hal_nfc_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.nothing                    u:object_r:hal_lineage_powershare_default_exec:s0
 
+# Label read_ahead_kb in /data partition
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/read_ahead_kb u:object_r:vendor_sysfs_scsi_host:s0
+
 # LEDs
 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led(/.*)?                          u:object_r:sysfs_leds:s0

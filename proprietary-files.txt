@@ -426,7 +426,7 @@ vendor/lib64/camera/fdconfigpreviewlite.bin|e95052671b9eec7ff53b665482b7b85b7dac
 vendor/lib64/camera/fdconfigvideo.bin|c3303efadaa16495aee7e508a07f9000a435e8a2
 vendor/lib64/camera/fdconfigvideolite.bin|2d4648c313fa28fb83272f39ad64fd3bd0ff826d
 vendor/lib64/hw/camera.qcom.so|1c19d94ddab7784600ee2ca539092fbc14dde2dc
-vendor/lib64/hw/com.qti.chi.override.so|30cdb8f654ccea6c6c0a1ec2a1803dfa0bd77ba3
+vendor/lib64/hw/com.qti.chi.override.so|cb4b213d1932fe020c93582458d9fad737d7004b
 vendor/lib64/com.qti.chiusecaseselector.so|fec7c94953b905c4c710c06b6c5d545815fe39ed
 vendor/lib64/com.qti.feature2.anchorsync.so|48af6e36eda3faaa8c849b57ec8fbcef345ed304
 vendor/lib64/com.qti.feature2.demux.so|ee1e87643a9476b349a3e497d7ab939d1cb183f4

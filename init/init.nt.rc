@@ -33,6 +33,9 @@ on boot
     chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_double_tap_pressed
     chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_fod_pressed
     chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_single_tap_pressed
+	
+    # Glyph LEDs
+    chown system system /sys/class/leds/aw210xx_led/single_led_br
 
 on property:sys.boot_completed=1
     # Camera

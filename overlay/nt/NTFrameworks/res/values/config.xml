@@ -942,5 +942,6 @@
         <item>org.codeaurora.snapcam</item>
         <item>com.android.camera</item>
         <item>org.lineageos.aperture</item>
+        <item>com.nothing.camera</item>
     </string-array>
 </resources>

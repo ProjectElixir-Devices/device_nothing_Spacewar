@@ -1,0 +1,104 @@
+#
+# Copyright (C) 2023 PixysOS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on boot
+    # Disable slowcharging 
+    write /sys/class/qcom-battery/slowcharge_en 0
+
+    # Display
+    chown system system /sys/class/drm/sde-conn-1-DSI-1/panel_id
+    chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/panel_id
+
+    # Display (hbm)
+    chown system system /sys/class/drm/sde-conn-1-DSI-1/hbm_mode
+    chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/hbm_mode
+
+    # Fingerprint
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
+    chown system system /dev/goodix_fp
+    chmod 666 /dev/goodix_fp
+
+    # Gestures
+    chown system system /sys/class/spi_master/spi0/spi0.0/fts_edge_mode
+    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_mode
+    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gestures
+    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_double_tap_pressed
+    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_fod_pressed
+    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_single_tap_pressed
+
+    # Glyph
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_leds_effect
+    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_white_leds_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/glo_current
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/rear_cam_led_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/front_cam_led_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds_br
+    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_br
+    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br
+    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/wired_charging_leds
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/random_delay
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/random_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/keybd_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/wlr_charging_leds
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/video_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/ga_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/nf_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/bootan_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/rear_cam_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/music_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/ringtone_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/flip_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/exclamation_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_leds_effect
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_br
+
+    # tfa98xx
+    chmod 666 /sys/bus/i2c/devices/1-0034/reg
+    chmod 666 /sys/bus/i2c/devices/1-0034/rw
+    chmod 666 /sys/bus/i2c/devices/1-0035/reg
+    chmod 666 /sys/bus/i2c/devices/1-0035/rw
+    chmod 666 /sys/kernel/debug/tfa98xx-34/rpc
+    chmod 666 /sys/kernel/debug/tfa98xx-35/rpc
+    chmod 666 /proc/tfa98xx-34/rpc
+    chmod 666 /proc/tfa98xx-35/rpc
+    chmod 666 /sys/class/qcom-haptics/lra_calibration
+    chmod 666 /sys/class/qcom-haptics/lra_frequency_hz
+    chmod 666 /sys/class/qcom-haptics/lra_impedance
+    chown system system /sys/class/qcom-haptics/lra_calibration
+    chown system system /sys/class/qcom-haptics/lra_frequency_hz
+    chown system system /sys/class/qcom-haptics/lra_impedance
+   
+    # Wireless Charging
+    chown system system /sys/class/qcom-battery/wireless_boost_en
+    chmod 0666 /sys/class/qcom-battery/wireless_boost_en
+    chmod 0666 /sys/class/qcom-battery/wls_st38_reg
+    chmod 0666 /sys/class/qcom-battery/wls_reverse_status
+
+on post-fs-data
+    # Nothing camera
+    mkdir /data/vendor/camera 0775 camera camera
+    copy /mnt/vendor/persist/camera/bokeh_caldata_uw_persist.bin /data/vendor/camera/bokeh_caldata_uw_persist.bin
+    chmod 0444 /data/vendor/camera/bokeh_caldata_uw_persist.bin
+    chown cameraserver audio /data/vendor/camera/bokeh_caldata_uw_persist.bin
+    copy /mnt/vendor/persist/camera/ois_caldata_wide_persist.bin /data/vendor/camera/ois_caldata_wide_persist.bin
+    chmod 0444 /data/vendor/camera/ois_caldata_wide_persist.bin
+    chown cameraserver audio /data/vendor/camera/ois_caldata_wide_persist.bin
+
+    # Nfc  
+    chmod 0660 /dev/pn553
+    chown nfc nfc /dev/pn553
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+
+on property:sys.boot_completed=1
+    # Health
+    restart health-hal-2-1

@@ -1,4 +1,3 @@
-
 # Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -65,13 +64,6 @@ on init
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
 
-    # Begin, added by zhiming.guan for ABR-14096
-    chown root system /sys/class/thermal/thermal_zone94/mode
-    chown root system /sys/class/thermal/thermal_zone95/mode
-    chmod 0664 /sys/class/thermal/thermal_zone94/mode
-    chmod 0664 /sys/class/thermal/thermal_zone95/mode
-    # End
-
 on early-fs
     start vold
 
@@ -83,26 +75,6 @@ on fs
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
-    #GW9578 fp
-    chmod 666 /dev/goodix_fp
-    chown system system /dev/goodix_fp
-    chown system system /sys/class/backlight/panel0-backlight/hbm_mode
-    chmod 666 /sys/class/backlight/panel0-backlight/hbm_mode
-    #chmod tfa climax
-    chmod 666 /sys/bus/i2c/devices/1-0034/reg
-    chmod 666 /sys/bus/i2c/devices/1-0034/rw
-    chmod 666 /sys/bus/i2c/devices/1-0035/reg
-    chmod 666 /sys/bus/i2c/devices/1-0035/rw
-    chmod 666 /sys/kernel/debug/tfa98xx-34/rpc
-    chmod 666 /sys/kernel/debug/tfa98xx-35/rpc
-    chmod 666 /proc/tfa98xx-34/rpc
-    chmod 666 /proc/tfa98xx-35/rpc
-    chmod 666 /sys/class/qcom-haptics/lra_calibration
-    chmod 666 /sys/class/qcom-haptics/lra_frequency_hz
-    chmod 666 /sys/class/qcom-haptics/lra_impedance
-    chown system system /sys/class/qcom-haptics/lra_calibration
-    chown system system /sys/class/qcom-haptics/lra_frequency_hz
-    chown system system /sys/class/qcom-haptics/lra_impedance
 
 on post-fs-data
     mkdir /data/vendor/goodix 0700 system system
@@ -116,12 +88,6 @@ on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
-    # FOD
-    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gestures
-    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_fod_pressed
-    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_single_tap_pressed
-    chown system system /sys/class/spi_master/spi0/spi0.0/fts_gesture_double_tap_pressed
-
 on late-fs
     wait_for_prop hwservicemanager.ready true
     #exec_start wait_for_keymaster
@@ -133,21 +99,6 @@ on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
-
-on post-fs-data
-    mkdir /data/vendor/camera 0775 camera camera
-    copy /mnt/vendor/persist/camera/bokeh_caldata_uw_persist.bin /data/vendor/camera/bokeh_caldata_uw_persist.bin
-    chmod 0444 /data/vendor/camera/bokeh_caldata_uw_persist.bin
-    chown cameraserver audio /data/vendor/camera/bokeh_caldata_uw_persist.bin
-    copy /mnt/vendor/persist/camera/ois_caldata_wide_persist.bin /data/vendor/camera/ois_caldata_wide_persist.bin
-    chmod 0444 /data/vendor/camera/ois_caldata_wide_persist.bin
-    chown cameraserver audio /data/vendor/camera/ois_caldata_wide_persist.bin
-
-on post-fs-data
-    chmod 0660 /dev/pn553
-    chown nfc nfc /dev/pn553
-    mkdir /data/vendor/nfc 0777 nfc nfc
-    mkdir /data/vendor/nfc/param 0777 nfc nfc
 
 on early-boot
     start vendor.sensors
@@ -175,60 +126,6 @@ on boot
     chmod 0660 /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0062/trusted_touch_event
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
-    # add for MZ to write sa_dump
-    chown system system /sys/dump_node
-    chown system system /sys/dump_node/sa_dump
-    chmod 0660 /sys/dump_node/sa_dump
-    # add for MZ to write hbm_mode
-    chown system system /sys/class/drm/sde-conn-1-DSI-1/hbm_mode
-    chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/hbm_mode
-    # add for cit to read panel_id
-    chown system system /sys/class/drm/sde-conn-1-DSI-1/panel_id
-    chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/panel_id
-    # add for cit to write leds
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_leds_effect
-    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_leds_effect
-    #add for TP to write mode
-    chown system system /sys/bus/spi/devices/spi0.0/fts_edge_mode
-    chown system system /sys/bus/spi/devices/spi0.0/fts_gesture_mode
-    # add for cit to write wireless_boost_en
-    #chown system system /sys/class/qcom-battery/wireless_boost_en
-    # add for cit to write wls_st38_reg
-    #chown system system /sys/class/qcom-battery/wls_st38_reg
-    # add for runin to write charger
-    #chown system system /sys/class/qcom-battery/usb_charger_en
-    # add for slowcharge need to write charger
-    #chown system system /sys/class/qcom-battery/slowcharge_en
-    # add for ledTest to write led brightness
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_white_leds_br
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/glo_current
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/rear_cam_led_br
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/front_cam_led_br
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds_br
-    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds_br
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_br
-    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_br
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br
-    chmod 0666 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds
-    #add for hal write lednode
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/wired_charging_leds
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/random_delay
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/random_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/keybd_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/wlr_charging_leds
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/video_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/ga_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/nf_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/bootan_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/rear_cam_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/music_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/ringtone_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/flip_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/exclamation_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_leds_effect
-    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_br
     #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -323,43 +220,3 @@ service fan_control_turn_off /vendor/bin/fan_control 0
     user root
     disabled
     oneshot
-
-#ningfei add for fix ABR-3149
-#add system group for charger node@{
-on property:service.bootanim.exit=1
-    # add for cit to write wireless_boost_en
-    chown system system /sys/class/qcom-battery/wireless_boost_en
-    chmod 0666 /sys/class/qcom-battery/wireless_boost_en
-    # add for cit to write wls_st38_reg
-    chown system system /sys/class/qcom-battery/wls_st38_reg
-    chmod 0666 /sys/class/qcom-battery/wls_st38_reg
-    chmod 0666 /sys/class/qcom-battery/wls_reverse_status
-    # add for runin to write charger
-    chown system system /sys/class/qcom-battery/usb_charger_en
-    # add for slowcharge need to write charger
-    chown system system /sys/class/qcom-battery/slowcharge_en
-    # add for slowcharge need to write charger
-    chown system system /sys/class/qcom-battery/charge_pump_enable
-    # add for ABR-2547
-    chown system system /sys/class/qcom-battery/charge_power
-    # add for ABR-12041
-    write /sys/class/qcom-battery/slowcharge_en 0
-#@}
-
-# funk.tan for ship_mode @{
-on property:sys.ship_mode.enable=0
-   write /sys/class/qcom-battery/ship_mode_en 0
-
-on property:sys.ship_mode.enable=1
-   write /sys/class/qcom-battery/ship_mode_en 1
-# @}
-
-# change by nick for charge @{
-on property:sys.boot_completed=1 && property:persist.sys.runin.charging=false
-    write /sys/class/qcom-battery/usb_charger_en 0
-on property:sys.boot_completed=1 && property:persist.sys.runin.charging=true
-    write /sys/class/qcom-battery/usb_charger_en 1
-# @}
-
-on property:sys.boot_completed=1
-    restart health-hal-2-1

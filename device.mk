@@ -154,7 +154,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvisualizer \
     libvolumelistener \
-    sound_trigger.primary.lahaina
+    sound_trigger.primary.lahaina \
+    libspatialaudio 
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 

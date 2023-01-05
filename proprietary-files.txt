@@ -120,6 +120,7 @@ vendor/lib/libsurround_3mic_proc.so
 vendor/firmware/tfa98xx.cnt
 
 # Audio FX modules
+vendor/lib/soundfx/libspatialaudio.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdiraceffect.so
 vendor/lib/soundfx/libqcbassboost.so

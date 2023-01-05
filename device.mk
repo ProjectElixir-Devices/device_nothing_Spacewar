@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     libssrec \
     libstdc++.vendor \
     libvolumelistener \
-    sound_trigger.primary.lahaina:32
+    sound_trigger.primary.lahaina \
+    libspatialaudio 
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 

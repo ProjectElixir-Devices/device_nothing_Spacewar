@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2023 Project-Elixir
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "SpacewarCarrierConfig",
+    aaptflags: ["--keep-raw-values"],
+    product_specific: true,
+}

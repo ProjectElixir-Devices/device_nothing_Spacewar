@@ -15,13 +15,22 @@ $(call inherit-product, vendor/nothing/camera/nothing-camera.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-elixir
+    $(LOCAL_PATH)/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig \
-    $(LOCAL_PATH)/overlay-elixir/packages/apps/Aperture
+# RRO (Elixir)
+PRODUCT_PACKAGES += \
+    ElixirFrameworksSpacewar \
+    ElixirSystemUISpacewar
+
+# RRO (Spacewar)
+PRODUCT_PACKAGES += \
+    SpacewarCarrierConfig \
+    SpacewarFrameworks \
+    SpacewarSettingsProvider \
+    SpacewarSettings \
+    SpacewarSystemUI \
+    SpacewarTelephony \
+    WifiResCommon
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -465,9 +474,6 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    WifiResCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf

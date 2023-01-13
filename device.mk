@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# Glyph
+PRODUCT_PACKAGES += \
+    ElixirGlyph
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
@@ -356,10 +360,6 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libstagefrighthw
-
-# Parts
-PRODUCT_PACKAGES += \
-    NothingParts
 
 # Perf
 PRODUCT_PACKAGES += \

@@ -6,5 +6,5 @@
 runtime_resource_overlay {
     name: "SpacewarCarrierConfig",
     aaptflags: ["--keep-raw-values"],
-    product_specific: true,
+    device_specific: true,
 }

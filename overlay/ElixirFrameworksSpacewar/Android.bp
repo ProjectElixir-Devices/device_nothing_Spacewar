@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "ElixirFrameworksSpacewar",
-    vendor: true,
+    system_ext_specific: true,
 }

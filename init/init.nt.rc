@@ -46,6 +46,3 @@ on property:sys.boot_completed=1
     copy /mnt/vendor/persist/camera/ois_caldata_wide_persist.bin /data/vendor/camera/ois_caldata_wide_persist.bin
     chown cameraserver audio /data/vendor/camera/bokeh_caldata_uw_persist.bin
     chown cameraserver audio /data/vendor/camera/ois_caldata_wide_persist.bin
-
-    # Health
-    restart health-hal-2-1

@@ -279,7 +279,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl-Spacewar \
     android.hardware.health@2.1-service
 
 # HIDL

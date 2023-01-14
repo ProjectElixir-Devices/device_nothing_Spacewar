@@ -130,7 +130,3 @@ on property:service.bootanim.exit=1
     chmod 0666 /sys/class/qcom-battery/wls_reverse_status
     chown system system /sys/class/qcom-battery/charge_power
     chown system system /sys/class/qcom-battery/wls_st38_en
-
-on property:sys.boot_completed=1
-    # Health
-    restart health-hal-2-1

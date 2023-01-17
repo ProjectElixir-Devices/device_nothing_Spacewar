@@ -1,3 +1,7 @@
+# ART
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.image-dex2oat-filter=everything
+
 # Audio
 ro.vendor.dirac.acs.controller=gef
 ro.vendor.dirac.gef.mode=global

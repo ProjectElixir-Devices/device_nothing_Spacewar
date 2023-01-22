@@ -180,6 +180,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# Dex
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+USE_DEX2OAT_DEBUG := false
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \

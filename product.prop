@@ -12,6 +12,10 @@ ro.opa.eligible_device=true
 # Camera
 ro.camerax.extensions.enabled=true
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Thermal
 persist.vendor.thermal.config=/vendor/etc/thermal-engine.conf
 

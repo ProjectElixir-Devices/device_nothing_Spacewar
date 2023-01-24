@@ -677,6 +677,9 @@
          This value is a fraction between 3.5% and 100%. -->
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
 
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">255</integer>
+
     <!-- Minimum screen brightness setting allowed by power manager.
         The user is forbidden from setting the brightness below this level.
         Equivalent to 1/255. -->

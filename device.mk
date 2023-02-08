@@ -342,9 +342,9 @@ PRODUCT_PACKAGES += \
     QSSITelephony \
     QSSIWifi
 
-# Paranoid Glyph
+# Elixir Glyph
 PRODUCT_PACKAGES += \
-    ParanoidGlyph
+    ElixirGlyph
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)

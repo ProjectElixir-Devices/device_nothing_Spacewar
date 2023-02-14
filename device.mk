@@ -26,7 +26,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # RRO (Elixir)
 PRODUCT_PACKAGES += \
     ElixirFrameworksSpacewar \
-    ElixirSystemUISpacewar
+    ElixirSystemUISpacewar \
+    BoostFrameworkOverlay
 
 # RRO (Spacewar)
 PRODUCT_PACKAGES += \

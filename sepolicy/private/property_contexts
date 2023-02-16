@@ -1,8 +1,3 @@
-# Audio (Dirac)
-persist.vendor.dirac.                       u:object_r:system_dirac_prop:s0
-ro.vendor.dirac.                            u:object_r:system_dirac_prop:s0
-vendor.dirac.                               u:object_r:system_dirac_prop:s0
-
 # Camera
 NA                                          u:object_r:exported_system_prop:s0
 persist.vendor.arcsoft.                     u:object_r:exported_system_prop:s0

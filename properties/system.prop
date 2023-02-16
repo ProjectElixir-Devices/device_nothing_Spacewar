@@ -11,6 +11,9 @@ persist.vendor.bluetooth.modem_nv_support=true
 # Camera
 camera.disable_zsl_mode=true
 
+# Brightness
+persist.sys.brightness.low.gamma=true
+
 # Charger
 ro.charger.enable_suspend=1
 

@@ -373,7 +373,13 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
+    libpsi.vendor \
+    libtflite
+
+# Perf Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
 
 # IRQ balance config
 PRODUCT_COPY_FILES += \
@@ -424,6 +430,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# Task profiles
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
@@ -447,6 +457,7 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0 \
     android.hardware.thermal@2.0.vendor
 
 # Update engine

@@ -128,8 +128,6 @@ vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
 # Audio goodix
-system_ext/lib/libavenhancements.so
-system_ext/lib64/libavenhancements.so
 system_ext/etc/hdr_config/ans_off/ans_config.txt
 system_ext/etc/hdr_config/ans_on/ans_config.txt
 system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt
@@ -232,6 +230,8 @@ system_ext/etc/hdr_config/wnr_off/wnr_config.txt
 system_ext/etc/hdr_config/wnr_off/wnr_params.txt
 system_ext/etc/hdr_config/wnr_on/wnr_config.txt
 system_ext/etc/hdr_config/wnr_on/wnr_params.txt
+system_ext/lib/libavenhancements.so
+system_ext/lib64/libavenhancements.so
 
 # Audio LVIMFS parameters
 vendor/etc/lvacfs_params/1mic/LVACFS_Calibration360.dat
@@ -312,16 +312,16 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# Bluetooth (firmware) - from Spacewar - TKQ1.220915.002
-vendor/firmware/msnv10.bin|f595915334f55625f32f526d1e2a57ebce2f84e5
-vendor/firmware/msnv11.bin|0ede455464f857eb4205604b0c3281d418b99222
-vendor/firmware/msbtfw10.tlv|a5325ddacf71ec08913ffc7da8451dd36f08307d
-vendor/firmware/msbtfw11.tlv|a86441688e74d5e16bc073d4d5ae0b0a0309ac81
-vendor/firmware/msbtfw11.mbn|3857c318655995d9168ac28c4cbaf39d2181d188
-
 # Bluetooth (aptX) - from raven - TP1A.220624.021
 -system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 -system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
+# Bluetooth (firmware) - from Spacewar - TKQ1.220915.002
+vendor/firmware/msbtfw10.tlv|a5325ddacf71ec08913ffc7da8451dd36f08307d
+vendor/firmware/msbtfw11.mbn|3857c318655995d9168ac28c4cbaf39d2181d188
+vendor/firmware/msbtfw11.tlv|a86441688e74d5e16bc073d4d5ae0b0a0309ac81
+vendor/firmware/msnv10.bin|f595915334f55625f32f526d1e2a57ebce2f84e5
+vendor/firmware/msnv11.bin|0ede455464f857eb4205604b0c3281d418b99222
 
 # Camera
 system/etc/permissions/advancedSample_camera_extensions.xml
@@ -935,6 +935,9 @@ product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IMS - from LA.QSSI.13.0.r1-05300-qssi.0
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
+
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/yupik_ipa_fws.b00
@@ -1399,9 +1402,6 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|6cf6e534590ccd2090f6ea4881bedf26e24
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|d0cc163c93b9121ec016673b198c103484ba6adc
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|26df2c5ff42d58456ebcd0fd7d0ba51f56a3f390
 
-# IMS - from LA.QSSI.13.0.r1-05300-qssi.0
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
-
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
@@ -1508,6 +1508,8 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/ssr_setup
 
 # Thermal
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
@@ -1530,8 +1532,6 @@ vendor/etc/thermal.mid.level4.conf
 vendor/etc/thermal.sgame.conf
 vendor/etc/thermal.super.conf
 vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
 
 # Time

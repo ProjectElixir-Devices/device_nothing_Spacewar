@@ -1419,6 +1419,7 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
@@ -1449,6 +1450,7 @@
     <carrier_config mcc="405" mnc="854">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
@@ -1481,6 +1483,7 @@
     <carrier_config mcc="405" mnc="855">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1513,6 +1516,7 @@
     <carrier_config mcc="405" mnc="856">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1545,6 +1549,7 @@
     <carrier_config mcc="405" mnc="857">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1577,6 +1582,7 @@
     <carrier_config mcc="405" mnc="858">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1609,6 +1615,7 @@
     <carrier_config mcc="405" mnc="859">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1641,6 +1648,7 @@
     <carrier_config mcc="405" mnc="860">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1673,6 +1681,7 @@
     <carrier_config mcc="405" mnc="861">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1705,6 +1714,7 @@
     <carrier_config mcc="405" mnc="862">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1737,6 +1747,7 @@
     <carrier_config mcc="405" mnc="863">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1769,6 +1780,7 @@
     <carrier_config mcc="405" mnc="864">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1801,6 +1813,7 @@
     <carrier_config mcc="405" mnc="865">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1833,6 +1846,7 @@
     <carrier_config mcc="405" mnc="866">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1865,6 +1879,7 @@
     <carrier_config mcc="405" mnc="867">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1897,6 +1912,7 @@
     <carrier_config mcc="405" mnc="868">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1929,6 +1945,7 @@
     <carrier_config mcc="405" mnc="869">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1961,6 +1978,7 @@
     <carrier_config mcc="405" mnc="870">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -1993,6 +2011,7 @@
     <carrier_config mcc="405" mnc="871">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -2057,6 +2076,7 @@
     <carrier_config mcc="405" mnc="873">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -2089,6 +2109,7 @@
     <carrier_config mcc="405" mnc="874">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -3568,6 +3589,7 @@
     </carrier_config>
     <carrier_config cid="1961" name="Airtel">
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="support_video_conference_call_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="true" />
         <boolean name="editable_wfc_roaming_mode_bool" value="false" />
@@ -3603,6 +3625,7 @@
     </carrier_config>
     <carrier_config cid="2018" name="Reliance Jio">
         <boolean name="editable_wfc_mode_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="editable_wfc_roaming_mode_bool" value="false" />
         <boolean name="config_disable_clir_over_ut" value="true" />
         <boolean name="enable_carrier_display_name_resolver_bool" value="true" />

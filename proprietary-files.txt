@@ -315,10 +315,6 @@ vendor/firmware/msbtfw10.tlv|a5325ddacf71ec08913ffc7da8451dd36f08307d
 vendor/firmware/msbtfw11.tlv|a86441688e74d5e16bc073d4d5ae0b0a0309ac81
 vendor/firmware/msbtfw11.mbn|3857c318655995d9168ac28c4cbaf39d2181d188
 
-# Bluetooth (aptX) - from cheetah - TD1A.221105.001
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-
 # Camera - from Spacewar - TKQ1.220915.002
 system/etc/permissions/advancedSample_camera_extensions.xml|275255158bd0ff3d35ad30e377a06780363ecd36
 system/etc/public.libraries.txt|20512e4dbb8ebe229cf211eff3b50040f9f96679

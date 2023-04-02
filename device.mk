@@ -392,6 +392,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.3.vendor
 
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.nothing

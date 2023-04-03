@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from Spacewar-T1.5-230114-2357
+# All unpinned blobs are extracted from Spacewar-T1.5-230310-1650
 
 # ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
@@ -1084,12 +1084,12 @@ vendor/etc/media_profiles_yupik_v1.xml
 # Native public libraries
 vendor/etc/public.libraries.txt
 
-# NFC configs - from Spacewar-S1.1-221121-2306
-vendor/etc/libnfc-nci.conf|1a35e2176512a5b7fb7ab582abdae677acf62da4
-vendor/etc/libnfc-nxp.conf|da63885adefc399095217bf42a1d43c00b1d39b5
+# NFC configs
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
 
-# NFC firmware  - from Spacewar-S1.1-221121-2306
-vendor/lib64/libpn557_fw.so|357ad14987855b768e552227f5f72161f66c071c
+# NFC firmware
+vendor/lib64/libpn557_fw.so
 
 # Perf (configs) - from  LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
 vendor/etc/lm/AdaptLaunchFeature.xml|2384a0735410063a0722c83fb5169ada612bbd35

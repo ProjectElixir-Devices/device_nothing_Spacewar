@@ -1103,8 +1103,8 @@ vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
 vendor/etc/lm/sPLHFeature.xml|08d19795671d4f8abfab55e4bf4f2c2a2d3e2374
 vendor/etc/perf/commonresourceconfigs.xml|70f678c8e1a81be6251b384eef998a0aaa911dbd
 vendor/etc/perf/commonsysnodesconfigs.xml|31e331d17ce07f265c36c085fc10b640343ab34c
-vendor/etc/perf/perfboostsconfig.xml|f2fd2b152040f63885afa2a99dc0365b1b25ab3f
-vendor/etc/perf/perfconfigstore.xml|65441a1c650bf9e4cf5ee73970a16cdf38c73746
+vendor/etc/perf/perfboostsconfig.xml|a2119093f39d2a83de4713dbff5429bfa2ad9087
+vendor/etc/perf/perfconfigstore.xml|613e71a58d55d6b4826b24cdf59cefc76600446c
 vendor/etc/perf/targetconfig.xml|b0166708db671f650c20430f5254d28d88ceb584
 vendor/etc/perf/targetresourceconfigs.xml|f929946e75637941b91b186024466fb1f1bdde6d
 

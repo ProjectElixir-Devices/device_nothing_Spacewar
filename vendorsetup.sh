@@ -5,7 +5,7 @@ git clone --depth=1 https://github.com/ProjectElixir-Devices/vendor_nothing_Spac
 git clone --depth=1 https://github.com/ProjectElixir-Devices/kernel_nothing_sm7325.git -b tiramisu kernel/nothing/sm7325
 
 # Nothing Camera
-git clone --depth=1 https://gitlab.com/ThankYouMario/proprietary_vendor_nothing_camera.git -b topaz vendor/nothing/camera
+git clone --depth=1 https://gitlab.com/NotHarshhaa/vendor_nothing_camera.git -b xt vendor/nothing/camera
 
 # Elixir Glyph
 git clone --depth=1 https://github.com/ProjectElixir-Devices/packages_apps_ElixirGlyph.git -b tiramisu packages/apps/ElixirGlyph

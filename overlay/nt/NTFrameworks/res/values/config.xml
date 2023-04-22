@@ -528,16 +528,10 @@
     <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
-    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
-
-    <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.elixir.sensor.udfps</string>
 
     <!-- Type of the tap sensor. Empty if tap is not supported. -->
-    <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_touch</string>
-
-    <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
-    <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
+    <string name="config_dozeTapSensorType" translatable="false">org.elixir.sensor.single_tap</string>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.

@@ -189,6 +189,10 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 
+# Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/displayconfig/display_id_4630946480328692354.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480328692354.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \

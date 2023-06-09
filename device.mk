@@ -359,7 +359,7 @@ PRODUCT_PACKAGES += \
 
 # Elixir Glyph
 PRODUCT_PACKAGES += \
-    ElixirGlyph
+    ElixirGlyphPhone1
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)

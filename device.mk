@@ -271,7 +271,7 @@ PRODUCT_PACKAGES += \
 
 # Glyph
 PRODUCT_PACKAGES += \
-    ElixirGlyph
+    ElixirGlyphPhone1
 
 # GPS
 PRODUCT_PACKAGES += \

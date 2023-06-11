@@ -26,8 +26,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # RRO (Elixir)
 PRODUCT_PACKAGES += \
     ElixirFrameworksSpacewar \
-    ElixirSystemUISpacewar \
-    BoostFrameworkOverlay
+    ElixirSystemUISpacewar
 
 # RRO (Spacewar)
 PRODUCT_PACKAGES += \
@@ -380,11 +379,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpsi.vendor \
     libtflite
-
-# Perf Jars
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
 
 # IRQ balance config
 PRODUCT_COPY_FILES += \

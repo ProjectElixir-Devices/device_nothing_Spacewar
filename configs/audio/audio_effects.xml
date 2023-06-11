@@ -44,6 +44,9 @@
         <library name="volume_listener" path="libvolumelistener.so"/>
         <library name="audiosphere" path="libasphere.so"/>
         <library name="shoebox" path="libshoebox.so"/>
+        <!-- add for dirac support -->
+        <library name="dirac_gef" path="libdiraceffect.so"/>
+        <!-- add for dirac support -->
         <library name="spatializer" path="libspatialaudio.so"/>
     </libraries>
     <effects>
@@ -93,9 +96,15 @@
         <effect name="notification_helper" library="volume_listener" uuid="0b776dde-0590-11e5-81ba-0025b32654a0"/>
         <effect name="audiosphere" library="audiosphere" uuid="184e62ab-2d19-4364-9d1b-c0a40733866c"/>
         <effect name="shoebox" library="shoebox" uuid="1eab784c-1a36-4b2a-b7fc-e34c44cab89e"/>
+        <!-- add for dirac support -->
+        <effect name="dirac_gef" library="dirac_gef" uuid="3799D6D1-22C5-43C3-B3EC-D664CF8D2F0D"/>
+        <effect name="dirac_afm" library="dirac_gef" uuid="743539F8-1076-451F-8395-84ACFAB0FAC7"/>
+        <effect name="dirac_controller" library="dirac_gef" uuid="128B9BA2-D0C9-47C6-AFF3-9F761CD0E228"/>
+        <!-- add for dirac support -->
         <effect name="spatializer" library="spatializer" uuid="cc4677de-ff72-11eb-9a03-0242ac130003"/>
     </effects>
     <postprocess>
+    <!-- heaton.zhong, 2022/02/21, Remove for dirac
         <stream type="music">
             <apply effect="music_helper"/>
         </stream>
@@ -105,12 +114,15 @@
         <stream type="alarm">
             <apply effect="alarm_helper"/>
         </stream>
+    -->
         <stream type="voice_call">
             <apply effect="voice_helper"/>
         </stream>
+    <!-- heaton.zhong, 2022/02/21, Remove for dirac
         <stream type="notification">
             <apply effect="notification_helper"/>
         </stream>
+    -->
     </postprocess>
     <preprocess>
         <stream type="voice_communication">

@@ -166,7 +166,6 @@ persist.device_config.mglru_native.lru_gen_config=core
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
 
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30

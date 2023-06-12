@@ -166,7 +166,6 @@ debug.stagefright.omx_default_rank=0
 # Perf
 ro.vendor.perf-hal.ver=2.2
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
 ro.vendor.qspm.enable=true
 ro.vendor.beluga.p=0x3
 ro.vendor.beluga.c=0x4800

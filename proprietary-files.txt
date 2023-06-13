@@ -643,6 +643,15 @@ vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 # Data - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/bin/netmgrd|4254e808131fa3a13aec1474bb769dbd539379ff
 
+# Diag
+-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+system_ext/lib/vendor.qti.diaghal@1.0.so
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+vendor/lib/vendor.qti.diaghal@1.0.so
+vendor/lib64/vendor.qti.diaghal@1.0.so
+
 # Dirac
 system/etc/permissions/se.dirac.acs.xml
 system/priv-app/DiracAudioControlService/DiracAudioControlService.apk

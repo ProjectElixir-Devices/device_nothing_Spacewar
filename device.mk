@@ -335,6 +335,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NTCarrierConfig \
     NTFrameworks \
+    NTNfc \
     NTSettingsProvider \
     NTSettings \
     NTSystemUI \

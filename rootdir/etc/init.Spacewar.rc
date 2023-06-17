@@ -114,10 +114,16 @@ on post-fs-data
     mkdir /data/vendor/nfc/param 0777 nfc nfc
 
     # Wireless Charging
+on property:service.bootanim.exit=1
     chown system system /sys/class/qcom-battery/wireless_boost_en
     chmod 0666 /sys/class/qcom-battery/wireless_boost_en
+    chown system system /sys/class/qcom-battery/wls_st38_reg
     chmod 0666 /sys/class/qcom-battery/wls_st38_reg
     chmod 0666 /sys/class/qcom-battery/wls_reverse_status
+    chown system system /sys/class/qcom-battery/usb_charger_en
+    chown system system /sys/class/qcom-battery/slowcharge_en
+    chown system system /sys/class/qcom-battery/wls_online_param
+    chown system system /sys/class/qcom-battery/charge_pump_enable
     chown system system /sys/class/qcom-battery/charge_power
     chown system system /sys/class/qcom-battery/wls_st38_en
     chown system system /sys/class/qcom-battery/wls_online_param

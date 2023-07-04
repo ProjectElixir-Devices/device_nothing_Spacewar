@@ -1592,10 +1592,6 @@ vendor/firmware/vpu20_1v_unsigned.mbn
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
 
-# WiFi configs
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
-
 # WiFi Display - from NOS U Beta
 system/framework/WfdCommon.jar|6663533d8ff37bca7252ff14d84b78c0efb9c6fc
 system_ext/bin/wfdservice|68038f6c5188c718e152593b2e6a82c1e5197ab0

@@ -99,6 +99,7 @@ BOARD_USES_ALSA_AUDIO := true
 
 # Camera
 TARGET_USES_NOTHING_CAMERA := true
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
 
 # Display
 SOONG_CONFIG_qtidisplay_udfps := true

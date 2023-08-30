@@ -175,31 +175,6 @@
         <item>500</item>            <!--  5000 - 10000 -->
         <item>582.36131</item>      <!--  10000+ -->
     </array>
-
-    <!-- Array of output values for LCD backlight corresponding to the lux values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         The brightness values must be between 0 and 255 and be non-decreasing.
-         This must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>285</item>
-        <item>285</item>
-        <item>1100</item>
-        <item>1200</item>
-        <item>1200</item>
-        <item>1340</item>
-        <item>1340</item>
-        <item>1900</item>
-        <item>1900</item>
-        <item>1900</item>
-        <item>1941</item>
-        <item>2300</item>
-        <item>2300</item>
-        <item>2900</item>
-        <item>3515</item>
-        <item>4094</item>
-        <item>4094</item>
-    </integer-array>
     
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
          values in the config_screenBrightnessBacklight array.  On OLED displays these  values
@@ -209,7 +184,6 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0</item>
-        <item>250.0</item>
         <item>500.0</item>
     </array>
 

@@ -7,7 +7,6 @@ audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
-ro.audio.spatializer_enabled=true
 
 # Camera
 ro.camerax.extensions.enabled=true
@@ -18,6 +17,3 @@ pm.dexopt.bg-dexopt=everything
 
 # Thermal
 persist.vendor.thermal.config=/vendor/etc/thermal-engine.conf
-
-# Optimize spatializer effect
-audio.spatializer.effect.util_clamp_min=300

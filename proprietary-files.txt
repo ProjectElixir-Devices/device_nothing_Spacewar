@@ -280,9 +280,6 @@ vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID4_MIC_Cam_back.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_13.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_4.txt
 
-# Audio (Spactial) - from raven-user 13 TQ1A.230105.002 9325679
-vendor/lib/soundfx/libspatialaudio.so|1a193072c8acc0de7cdbbdad86b84c5902d6931d
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc

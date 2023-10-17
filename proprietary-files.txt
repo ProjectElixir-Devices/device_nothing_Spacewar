@@ -1096,12 +1096,22 @@ vendor/etc/media_profiles_yupik_v1.xml
 # Native public libraries
 vendor/etc/public.libraries.txt
 
-# NFC configs
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
-
-# NFC firmware
-vendor/lib64/libpn557_fw.so
+# NFC - from NOS U Beta 
+system/framework/com.nxp.nfc.jar|c47e2eac463f3dc87776ced76e792b073fbfb11a
+vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service|fb6f0c93a26052556e6c09862074b20c1a13891d
+vendor/etc/init/android.hardware.nfc_snxxx@1.2-service.rc|9564051817abc7ac28610a080bfefea01b9a1692
+vendor/etc/libnfc-nci.conf|923043ce863263a83c648dca342503970d1223fc
+vendor/etc/libnfc-nxp.conf|5fd70db8666a4940e212fc57ccfc211c39eb5093
+vendor/etc/permissions/com.nxp.nfc.xml|f290fc3424551392da8bab0f28048f10c784f3e1
+vendor/lib64/jcos_client.so|a4d6af7c7ab0a9e3a05a63d4aea719f13756387f
+vendor/lib64/libchrome.so|78401b7bb9318679a8cc61e26c704f3c3054cc25
+vendor/lib64/libpn557_fw.so|357ad14987855b768e552227f5f72161f66c071c
+vendor/lib64/ls_client.so|a36ef60cbd245e15a1fb36b51987c12f7335cc77
+vendor/lib64/nfc_nci_nxp_snxxx.so|1b7069cccbedf9cb3cf591ebab837a01b6f613a2
+vendor/lib64/se_extn_client.so|7188e770af841a38ee23f73f3b7b958f93c9805a
+vendor/lib64/vendor.nxp.nxpese@1.0.so|466862ba5c6c7d3cdd5aece9baf073e911a9c4c1
+vendor/lib64/vendor.nxp.nxpnfc@2.0.so|fa9a1859a20e663cdcce913684741991c94a5695
+vendor/libnfc-nxp_RF.conf|c5a2c5c5e0a63d4e3a4e0b60bd69915cd6f290fa
 
 # Perf (configs)
 vendor/etc/lm/AdaptLaunchFeature.xml

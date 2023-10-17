@@ -22,12 +22,13 @@
 /vendor/lib64/libcamxextension_night\.so                           u:object_r:same_process_hal_file:s0
 /vendor/lib64/libcamxextension_algo\.so                            u:object_r:same_process_hal_file:s0
 
-
-# Devices
-/dev/goodix_fp              u:object_r:fingerprint_device:s0
-/dev/pn553                  u:object_r:nfc_device:s0
+# Nfc
+/dev/pn553                                                                                        u:object_r:nfc_device:s0
+/dev/nxp-nci                                                                                      u:object_r:nfc_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service                          u:object_r:hal_nfc_default_exec:s0
 
 # Fingerprint
+/dev/goodix_fp              u:object_r:fingerprint_device:s0
 /data/vendor/goodix(/.*)?   u:object_r:fingerprint_data_file:s0
 
 # HALs

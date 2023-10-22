@@ -163,17 +163,6 @@ debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
-# Perf
-ro.vendor.perf-hal.ver=2.2
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.qspm.enable=true
-ro.vendor.beluga.p=0x3
-ro.vendor.beluga.c=0x4800
-ro.vendor.beluga.s=0x900
-ro.vendor.beluga.t=0x240
-vendor.power.pasr.enabled=true
-vendor.pasr.activemode.enabled=true
-
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000

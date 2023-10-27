@@ -100,7 +100,6 @@ vendor/lib/soundfx/libdiraceffect.so
 
 # Audio libraries
 vendor/bin/audioflacapp
-vendor/lib/soundfx/libspatialaudio.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so

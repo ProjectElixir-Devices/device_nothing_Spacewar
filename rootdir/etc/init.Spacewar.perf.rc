@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2023 PixysOS
+# Copyright (C) 2023 Project Radiant
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -38,6 +39,8 @@ on property:vendor.post_boot.parsed=1
 
     # CPU Boost
     write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1651200 1:1651200 2:1651200 3:1651200 4:1651200 5:1651200 6:1651200 7:1862400"
+    write /sys/devices/system/cpu/cpu_boost/sched_boost_on_input 2
 
     # CPUFreq
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500

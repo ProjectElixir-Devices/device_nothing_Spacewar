@@ -417,7 +417,7 @@ PRODUCT_PACKAGES += \
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libvndfwk_detect_jni.qti.vendor
 
 # RIL

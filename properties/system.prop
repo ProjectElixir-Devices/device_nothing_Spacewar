@@ -103,3 +103,9 @@ ro.vendor.qti.va_aosp.support=1
 
 # WiFi Display
 persist.debug.wfd.enable=1
+
+# Nt Feature
+ro.build.nothing.feature.base=0x104b4245b9fff
+ro.build.nothing.feature.diff.device.Spacewar=0x41a032e34000
+ro.build.nothing.feature.diff.product.Spacewar=0x0
+ro.build.nothing.feature.diff.product.SpacewarEEA=0x0

@@ -374,6 +374,13 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# Nothing-fwk
+PRODUCT_PACKAGES += \
+    nothing-fwk
+
+PRODUCT_BOOT_JARS += \
+    nothing-fwk
+
 # OMX
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \

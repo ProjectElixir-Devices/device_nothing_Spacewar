@@ -2,3 +2,5 @@ device/nothing/
 vendor/nothing/ 
 kernel/nothing/
 packages/apps/Elixir*
+vendor/nothing/camera
+hardware/qcom-caf/sm8350/display

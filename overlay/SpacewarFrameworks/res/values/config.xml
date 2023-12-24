@@ -736,4 +736,8 @@
     <!-- If an any motion sensor is not available, prefer the wrist tilt detector over the
      SMD. -->
     <bool name="config_autoPowerModePreferWristTilt">true</bool>
+
+    <!-- The default value for whether head tracking for
+         spatial audio is enabled for a newly connected audio device -->
+    <bool name="config_spatial_audio_head_tracking_enabled_default">true</bool>
 </resources>

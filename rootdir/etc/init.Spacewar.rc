@@ -126,11 +126,10 @@ on property:service.bootanim.exit=1
     chmod 0666 /sys/class/qcom-battery/wls_reverse_status
     chown system system /sys/class/qcom-battery/usb_charger_en
     chown system system /sys/class/qcom-battery/slowcharge_en
-    chown system system /sys/class/qcom-battery/wls_online_param
+    chown system system /sys/class/qcom-battery/wls_chg_param
     chown system system /sys/class/qcom-battery/charge_pump_enable
     chown system system /sys/class/qcom-battery/charge_power
-    chown system system /sys/class/qcom-battery/wls_st38_en
-    chown system system /sys/class/qcom-battery/wls_online_param
+    chown system system /sys/class/qcom-battery/wls_en
 
 on property:service.bootanim.exit=0
     # Boot led effect placeholder

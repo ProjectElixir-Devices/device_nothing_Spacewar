@@ -14,9 +14,6 @@ $(call inherit-product, device/nothing/Spacewar/device.mk)
 # Inherit from Project-Elixir configuration.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit prebuilt apex modules.
-$(call inherit-product, vendor/mainline_modules/config.mk)
-
 # Bootanimation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 

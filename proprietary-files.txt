@@ -124,6 +124,7 @@ vendor/firmware/tfa98xx.cnt
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdiraceffect.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -278,6 +279,12 @@ vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID3_MIC_HDR_wideband.txt
 vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID4_MIC_Cam_back.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_13.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_4.txt
+
+# Audio (Spatial) - from tangorpro-user-14-UQ1A.231205.015
+vendor/lib/soundfx/libspatialaudio.so|1903f9c98b38728970ddd12094fa15d96e9d2a5b
+vendor/lib/aoc_audio_stereo_spatializer.so|f443a38e4c5654966dbcc89673ade51c0e27eea3
+vendor/lib64/soundfx/libspatialaudio.so|0242ecf82a322d6654d859123d4dd221c3c2bf12
+vendor/lib64/aoc_audio_stereo_spatializer.so|45c5055d36c51e2756089ee3e4c02bc204b93402
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -633,6 +640,17 @@ vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
+
+# Dirac
+system/etc/permissions/se.dirac.acs.xml
+system/priv-app/DiracAudioControlService/DiracAudioControlService.apk
+system/priv-app/NothingDiracService/NothingDiracService.apk
+vendor/etc/dirac/interfacedb
+vendor/etc/diracmobile.config
+vendor/etc/diracvdd.bin
+vendor/lib/libDiracAPI_SHARED.so
+vendor/lib/libdiracapwrapper.so
+vendor/lib/soundfx/libdiraceffect.so
 
 # Display Calibration data
 vendor/etc/qdcm_calib_data_rm692e5_amoled_fhd+_120hz_cmd_mode_dsi_visionox_panel.xml
@@ -1059,6 +1077,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # Media configs
+vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_yupik_v0.xml
 vendor/etc/media_codecs_performance_yupik_v1.xml

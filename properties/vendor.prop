@@ -100,6 +100,14 @@ bluetooth.device.default_name=Nothing Phone (1)
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
+# Dirac
+ro.vendor.dirac.acs.controller=gef 
+ro.vendor.dirac.gef.mode=global 
+ro.vendor.dirac.config=528
+ro.vendor.dirac.poolsize=3 
+ro.vendor.dirac.acs.storeSettings=1
+ro.vendor.dirac.acs.ignore_error=1
+
 # Display
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
